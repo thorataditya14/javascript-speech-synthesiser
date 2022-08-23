@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Speech synthesiser</title>
+</head>
+
+<body>
+    <h1>Speech synthesiser</h1>
+
+    <p>
+        Enter some text in the input below and press return or the "play" button to hear it.
+    </p>
+
+    <textarea id="text"></textarea>
+
+    <label for="rate">Speed</label>
+    <input type="range" name="rate" id="rate" min=".5" max="3" step=".5" value="1">
+
+    <label for="pitch">Pitch</label>
+    <input type="range" name="pitch" id="pitch" min=".5" max="3" step=".5" value="1">
+
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
